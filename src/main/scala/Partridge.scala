@@ -9,8 +9,16 @@ object Partridge {
 
   def apple(x: Any): String = {
 
+    def process(num: Int): String = {
+      val squared = num*num
+      if (squared >= 1000) {
+        "It's hotter than the sun!!"
+      } else {
+        "Help yourself to a honeycomb Yorkie for the glovebox"
+      }
+    }
     x match {
-      case _: Int => process(_)
+      case i: Int => process(i)
       case s: String =>
         try {
           process(s.toInt)
@@ -19,16 +27,6 @@ object Partridge {
         }
       case _ => "Not a number"
     }
-
-    def process(num: Int): String = {
-      val squared = num*num
-      if (squared >= 1000) {
-        "It's hotter than the sun!!"
-      } else {
-        "Help yourself to a honeycomb Yorkie for the glovebox."
-      }
-    }
-
   }
 
   def london(args: Array[String]): String = {
