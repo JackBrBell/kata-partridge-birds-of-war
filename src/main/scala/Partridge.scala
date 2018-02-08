@@ -11,8 +11,21 @@ object Partridge {
     ???
   }
 
-  def london(args: Array[String]): String = {
-    ???
+  def london(input: Array[String]): String = {
+    val values = Array("Rejection", "Disappointment", "Backstabbing Central", "Shattered Dreams Parkway")
+
+    input.foreach()
+    if (input.contains()
+    ("Rejection", "Disappointment", "Backstabbing Central", "Shattered Dreams Parkway"))  "a" else "b"
+
+    if (true) println("Hello") else println("Goodbye")
+
+    List(1,2,3).contains(4)
+
+    values.filterNot()
+
+    ""
   }
+
 
 }
