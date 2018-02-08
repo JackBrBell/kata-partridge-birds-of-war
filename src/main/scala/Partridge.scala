@@ -14,7 +14,6 @@ object Partridge extends App{
     //val statements = accepted.mkString(" ")
     val filtered = args.count(accepted contains _)
     //output = filtered
-    println(filtered)
 
     //check is filtered is empty
     if (filtered == 0) {
