@@ -18,9 +18,17 @@ object Partridge extends App{
   def apple(x: Any): String = {
   ???
   }
+  
+  def london(input: Array[String]): String = {
 
-  def london(args: Array[String]): String = {
-    ???
+    val accepted: Array[String] = Array("Rejection", "Disappointment", "Backstabbing Central", "Shattered Dreams Parkway")
+  if (accepted.forall(inputString => input.contains(inputString)) ) {
+    "Smell my cheese you mother!"
+  } else {
+    "No, seriously, run. You will miss it."
+  }
+
+
+  }
 }
 
-}
