@@ -16,7 +16,25 @@ object Partridge extends App{
   }
 
   def apple(x: Any): String = {
-  ???
+
+    def process(num: Int): String = {
+      val squared = num*num
+      if (squared >= 1000) {
+        "It's hotter than the sun!!"
+      } else {
+        "Help yourself to a honeycomb Yorkie for the glovebox"
+      }
+    }
+    x match {
+      case i: Int => process(i)
+      case s: String =>
+        try {
+          process(s.toInt)
+        } catch {
+          case ex: NumberFormatException => "Not a number"
+        }
+      case _ => "Not a number"
+    }
   }
   
   def london(input: Array[String]): String = {
@@ -27,8 +45,7 @@ object Partridge extends App{
   } else {
     "No, seriously, run. You will miss it."
   }
-
-
   }
+
 }
 
